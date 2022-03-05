@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users') // fetch API
       .then(response => response.json())                // convert response to JSON
-      .then(users => setRobots(users))    // use JSON response to fill state
+      .then(users => setRobots(users))                  // use JSON response to fill state
   }, []);
 
   const onSearchChange = (e) => {
